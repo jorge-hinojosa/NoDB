@@ -1,0 +1,13 @@
+.Post {
+  border: 1px solid black;
+  width: 15vw;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Image {
+  max-width: 15vw;
+}
