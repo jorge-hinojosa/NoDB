@@ -1,10 +1,11 @@
 .App-header {
-  padding-left: 2vw;
+  /* padding-left: 2vw; */
   width: 100vw;
   height: 10vh;
   background-color: pink;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   font-size: 2vw;

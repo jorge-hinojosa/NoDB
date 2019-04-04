@@ -1,13 +1,22 @@
-/* .Post {
-  border: 1px solid black;
-  width: 15vw;
-  height: 40vh;
+.Board {
+  border: 1px solid yellow;
+  max-width: 100vw;
+  height: 80vh; 
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
   justify-content: space-around;
+  align-items: center;
+
 }
 
-.Image {
-  max-width: 15vw;
-} */
+.Footer {
+  border: 3px solid black;
+  max-width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+

@@ -4,7 +4,9 @@ import './Header.css'
 function Header (props) {
   return (
     <header className="App-header">
-      Dope Project
+      <h3>
+        Dope Project
+      </h3>
     </header>
   )
 }

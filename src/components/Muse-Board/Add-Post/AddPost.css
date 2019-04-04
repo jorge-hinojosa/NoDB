@@ -1,0 +1,7 @@
+.AddPostForm {
+  /* border: 1px solid black; */
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
