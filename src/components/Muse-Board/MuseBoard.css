@@ -1,22 +1,21 @@
 .Board {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   max-width: 100vw;
-  height: 80vh; 
+  min-height: 80vh; 
+  background-color: rgb(224, 231, 231);
 
   display: flex;
   flex-direction: row; 
   justify-content: space-around;
   align-items: center;
-
 }
 
 .Footer {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   max-width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 
