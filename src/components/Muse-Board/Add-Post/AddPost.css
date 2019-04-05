@@ -1,7 +1,31 @@
+.Footer {
+  background-color: rgb(237, 243, 243);
+}
+
 .AddPostForm {
   /* border: 1px solid black; */
   width: 70vw;
+  background-color: rgb(237, 243, 243);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.AddPostBtn {
+  border: none;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+
+  background-color: rgb(59, 95, 95);
+
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: whitesmoke;
 }

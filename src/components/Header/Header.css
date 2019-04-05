@@ -1,7 +1,8 @@
 .App-header {
   width: 100vw;
   height: 10vh;
-  background-color: #5C4280;
+  /* background-color: rgb(59, 95, 95); */
+  background-color: black;
 
   display: flex;
   justify-content: space-around;
@@ -14,6 +15,7 @@
   height: 10vh;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 #header-icon {
@@ -24,5 +26,21 @@
   font-size: 2.5vw;
   font-family: 'Viga', sans-serif;
   font-weight: normal;
+  color: whitesmoke;
+}
+.Nav {
+  /* border: 1px solid black; */
+  width: 25vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.Nav-btn {
+  border: none;
+  background: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.2vw;
   color: whitesmoke;
 }

@@ -1,17 +1,38 @@
+.Main {
+  max-width: 100vw;
+  min-height: 90vh; 
+  background-color: rgb(237, 243, 243);
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+  
+}
 .Board {
   /* border: 1px solid yellow; */
-  max-width: 100vw;
-  min-height: 80vh; 
-  background-color: rgb(224, 231, 231);
+  margin: auto;
+  padding-top: 70px;
+  max-width: 80vw;
+  padding-bottom: 10vh;
+  /* min-height: 79vh;  */
 
   display: flex;
   flex-direction: row; 
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .Footer {
   /* border: 3px solid black; */
+  /* position: fixed bottom; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
   max-width: 100vw;
   height: 10vh;
   display: flex;

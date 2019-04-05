@@ -1,39 +1,54 @@
-import React, {Component} from 'react';
-import './AddPost.css';
+import React, { Component } from "react";
+import "./AddPost.css";
+import AddPostForm from "./Add-Post-Form/AddPostForm";
+import AddPostLauncher from "./Add-Post-Launcher/AddPostLauncher";
 
 class AddPost extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: '',
-      image: '',
-      link: '',
-      comment: ''
-    }
+      adding: false,
+      title: "",
+      image: "",
+      link: "",
+      comment: "",
+      likes: 0
+    };
     this.handleChange = this.handleChange.bind(this);
+    this.toggleAddPost = this.toggleAddPost.bind(this);
   }
   handleChange(event) {
     console.log(event.target.value);
-    this.setState({[event.target.name]: event.target.value});
+    this.setState({ [event.target.name]: event.target.value });
+  }
+  toggleAddPost() {
+    this.setState({
+      adding: !this.state.adding,
+      title: "",
+      image: "",
+      link: "",
+      comment: "",
+      likes: 0
+    });
   }
   render() {
-    const {addPost} = this.props;
-    const {title, image, link, comment} = this.state;
+    const { addPost } = this.props;
+    const { title, image, link, comment, likes, adding } = this.state;
 
-    return (
-      <footer className="Footer">
-        <form className="AddPostForm">
-          Title: <input onChange={this.handleChange} name='title'/>
-          Image Source: <input onChange={this.handleChange} name='image'/>
-          External Link: <input onChange={this.handleChange} name='link' />
-          Description: <input onChange={this.handleChange} name='comment'/>
-        <button 
-          className="AddPostBtn"
-          onClick={() => addPost({title, image, link, comment})}
-        >Add Post</button>
-        </form>
-      </footer>
-    )
+    return this.state.adding ? (
+      <AddPostForm
+        title={title}
+        image={image}
+        link={link}
+        comment={comment}
+        likes={likes}
+        addPost={addPost}
+        handleChange={this.handleChange}
+        toggle={this.toggleAddPost}
+      />
+    ) : (
+      <AddPostLauncher adding={adding} toggle={this.toggleAddPost} />
+    );
   }
 }
 

@@ -1,20 +1,31 @@
 .Post {
-  padding: 15px;
-  /* border: 1px solid black; */
+  padding: 12px;
+  border: 1px solid rgb(157, 175, 175);
   max-width: 15vw;
+  min-width: 15vw;
   height: 40vh;
   background-color: whitesmoke;
+  margin-bottom: 25px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-content: center;
+
+  font-family: "Roboto", sans-serif;
 
   box-shadow: 5px 7px rgb(157, 175, 175);
 }
-
+.Post a {
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
 .Image {
-  max-width: 15vw;
-  max-height: 20vh;
+  width: 14vw;
+  /* max-height: 20vh; */
+  /* box-shadow: 4px 6px rgb(157, 175, 175); */
+  /* border: 1px solid rgb(157, 175, 175); */
+  /* border: 1px solid black; */
 }
 .Post-btn-container {
   /* border: 1px solid black; */
@@ -23,11 +34,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 .Post-btn {
   border: none;
   margin: 2px;
   border-radius: 5px;
   background-color: whitesmoke;
+}
+.Likes {
+  font-weight: bold;
 }

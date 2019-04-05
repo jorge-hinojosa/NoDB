@@ -11,6 +11,11 @@ function Header (props) {
             alt="MuseBoard" />
           MuseBoard
         </h3>
+        <nav className="Nav">
+          <button className="Nav-btn">BLOG</button>
+          <button className="Nav-btn">ABOUT</button>
+          <button className="Nav-btn">CONTACT</button>
+        </nav>
       </div>
       
     </header>
