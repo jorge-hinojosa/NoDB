@@ -34,16 +34,7 @@ class Post extends Component {
   }
 
   render() {
-    const {
-      id,
-      title,
-      image,
-      link,
-      comment,
-      likes,
-      editPost,
-      deletePost
-    } = this.props;
+    const { id, title, image, link, comment, likes, deletePost } = this.props;
     const { editting } = this.state;
 
     const thumbsUpIcon = (

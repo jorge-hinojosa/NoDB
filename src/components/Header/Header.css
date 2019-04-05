@@ -7,7 +7,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 .Header {
   /* border: 1px solid black; */
@@ -22,9 +21,9 @@
   max-width: 2.5vw;
   color: white;
 }
-#title{
+#title {
   font-size: 2.5vw;
-  font-family: 'Viga', sans-serif;
+  font-family: "Viga", sans-serif;
   font-weight: normal;
   color: whitesmoke;
 }
@@ -34,12 +33,11 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-
 }
 .Nav-btn {
   border: none;
   background: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.2vw;
   color: whitesmoke;
