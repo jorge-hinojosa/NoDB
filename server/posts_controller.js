@@ -29,8 +29,8 @@ let id = 4;
 
 module.exports = {
   createPost: (req, res) => {
-    const { title, image, link, comment } = req.body;
-    posts.push({ id, title, image, link, comment });
+    const { title, image, link, comment, likes } = req.body;
+    posts.push({ id, title, image, link, comment, likes });
     id++;
     res.status(200).json(posts);
   },

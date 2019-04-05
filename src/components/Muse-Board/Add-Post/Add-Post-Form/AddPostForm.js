@@ -27,7 +27,7 @@ function AddPostForm(props) {
                 image: props.image,
                 link: props.link,
                 comment: props.comment,
-                likes: props.likes
+                likes: 0
               });
               props.toggle();
             } else {

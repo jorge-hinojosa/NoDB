@@ -27,8 +27,7 @@ class AddPost extends Component {
       title: "",
       image: "",
       link: "",
-      comment: "",
-      likes: 0
+      comment: ""
     });
   }
   render() {
@@ -41,7 +40,6 @@ class AddPost extends Component {
         image={image}
         link={link}
         comment={comment}
-        likes={likes}
         addPost={addPost}
         handleChange={this.handleChange}
         toggle={this.toggleAddPost}
