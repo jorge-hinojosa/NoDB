@@ -32,7 +32,7 @@ class AddPost extends Component {
   }
   render() {
     const { addPost } = this.props;
-    const { title, image, link, comment, likes, adding } = this.state;
+    const { title, image, link, comment, adding } = this.state;
 
     return this.state.adding ? (
       <AddPostForm
