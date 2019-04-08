@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Post.css";
 import axios from "axios";
+import RenderPost from "./RenderPost";
 
 class Post extends Component {
   constructor(props) {
@@ -11,11 +12,17 @@ class Post extends Component {
       likes: 0
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.editText = this.editText.bind(this);
     this.likeCounter = this.likeCounter.bind(this);
   }
   handleChange(val) {
     this.setState({ text: val });
+  }
+  handleClick() {
+    const { editting } = this.state;
+    const { comment } = this.props;
+    this.setState({ editting: !editting, comment });
   }
   editText(event) {
     const { text } = this.state;
@@ -72,43 +79,23 @@ class Post extends Component {
     );
 
     return (
-      <article className="Post">
-        <h3>{title}</h3>
-        <a href={link} target=".blank">
-          <img className="Image" src={image} alt={title} />
-        </a>
-        {editting ? (
-          <input
-            onChange={e => this.handleChange(e.target.value)}
-            onKeyPress={this.editText}
-            placeholder="Edit post here"
-          />
-        ) : (
-          <p className="Caption">{comment}</p>
-        )}
-        <span className="Post-btn-container">
-          <div>
-            <button
-              className="Post-btn"
-              onClick={() => this.likeCounter(id, likes)}
-            >
-              {thumbsUpIcon}
-            </button>{" "}
-            <span className="Likes">{likes}</span>
-          </div>
-          <div>
-            <button
-              className="Post-btn"
-              onClick={() => this.setState({ editting: !editting, comment })}
-            >
-              {pencilIcon}
-            </button>
-            <button className="Post-btn" onClick={() => deletePost(id)}>
-              {trashIcon}
-            </button>
-          </div>
-        </span>
-      </article>
+      <RenderPost
+        id={id}
+        title={title}
+        image={image}
+        link={link}
+        comment={comment}
+        likes={likes}
+        deletePost={deletePost}
+        editting={editting}
+        editText={this.editText}
+        handleChange={this.handleChange}
+        handleClick={this.handleClick}
+        likeCounter={this.likeCounter}
+        thumbsUpIcon={thumbsUpIcon}
+        pencilIcon={pencilIcon}
+        trashIcon={trashIcon}
+      />
     );
   }
 }

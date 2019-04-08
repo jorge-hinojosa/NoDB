@@ -38,33 +38,32 @@ class Muse extends Component {
   }
   updateLikes = id => {
     let postsCopy = this.state.posts.slice();
-
     let index = postsCopy.findIndex(post => post.id === id);
-
     postsCopy[index].likes += 1;
-
     this.setState({ posts: postsCopy });
   };
 
   render() {
     const { posts } = this.state;
 
-    let viewPosts = posts.map(post => {
-      return (
-        <Post
-          id={post.id}
-          key={post.id}
-          title={post.title}
-          image={post.image}
-          link={post.link}
-          comment={post.comment}
-          likes={post.likes}
-          editPost={this.editPost}
-          deletePost={this.deletePost}
-          updateLikes={this.updateLikes}
-        />
-      );
-    });
+    let viewPosts = posts
+      .map(post => {
+        return (
+          <Post
+            id={post.id}
+            key={post.id}
+            title={post.title}
+            image={post.image}
+            link={post.link}
+            comment={post.comment}
+            likes={post.likes}
+            editPost={this.editPost}
+            deletePost={this.deletePost}
+            updateLikes={this.updateLikes}
+          />
+        );
+      })
+      .reverse();
     console.log(viewPosts);
     return (
       <main className="Main">
