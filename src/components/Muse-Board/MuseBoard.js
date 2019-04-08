@@ -64,7 +64,6 @@ class Muse extends Component {
         );
       })
       .reverse();
-    console.log(viewPosts);
     return (
       <main className="Main">
         <div className="Board">{viewPosts}</div>

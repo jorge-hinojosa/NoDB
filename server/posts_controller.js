@@ -4,7 +4,7 @@ let posts = [
     title: "Tokyo Lights",
     image: "https://live.staticflickr.com/8153/7001598946_279f6bfb5e_b.jpg",
     link: "https://www.youtube.com/watch?v=ZJPjSaOcVwg",
-    comment: "This photo rocks",
+    comment: "So aesthetic",
     likes: 0
   },
   {

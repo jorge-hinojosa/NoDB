@@ -35,7 +35,6 @@ class Post extends Component {
   }
   likeCounter(id, likes) {
     axios.put(`/api/posts/likes/${id}`, { likes }).then(res => {
-      // console.log(res);
       this.props.updateLikes(id);
     });
   }
