@@ -34,9 +34,12 @@ class Post extends Component {
     }
   }
   likeCounter(id, likes) {
-    axios.put(`/api/posts/likes/${id}`, { likes }).then(res => {
-      this.props.updateLikes(id);
-    });
+    axios
+      .put(`/api/posts/likes/${id}`, { likes })
+      .then(res => {
+        this.props.updateLikes(id);
+      })
+      .catch(error => console.log(error));
   }
 
   render() {

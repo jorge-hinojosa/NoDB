@@ -37,6 +37,10 @@ function AddPostForm(props) {
         >
           +
         </button>
+        <button className="Minimize-btn" onClick={() => props.toggle()}>
+          {" "}
+          -{" "}
+        </button>
       </form>
     </footer>
   );

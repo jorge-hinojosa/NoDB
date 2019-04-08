@@ -11,8 +11,7 @@ class AddPost extends Component {
       title: "",
       image: "",
       link: "",
-      comment: "",
-      likes: 0
+      comment: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.toggleAddPost = this.toggleAddPost.bind(this);

@@ -15,26 +15,37 @@ class Muse extends Component {
     this.addPost = this.addPost.bind(this);
   }
   componentDidMount() {
-    axios.get("/api/posts").then(res => {
-      this.setState({ posts: res.data });
-    });
+    axios
+      .get("/api/posts")
+      .then(res => {
+        this.setState({ posts: res.data });
+      })
+      .catch(error => console.log(error));
   }
   addPost(newPost) {
-    axios.post("/api/posts", newPost).then(res => {
-      this.setState({ posts: res.data });
-    });
+    axios
+      .post("/api/posts", newPost)
+      .then(res => {
+        this.setState({ posts: res.data });
+      })
+      .catch(error => console.log(error));
   }
   editPost(id, text) {
     console.log("editPost:", id, text);
-    axios.put(`/api/posts/${id}`, { text }).then(res => {
-      console.log(res);
-      this.setState({ posts: res.data });
-    });
+    axios
+      .put(`/api/posts/${id}`, { text })
+      .then(res => {
+        this.setState({ posts: res.data });
+      })
+      .catch(error => console.log(error));
   }
   deletePost(id) {
-    axios.delete(`/api/posts/${id}`).then(res => {
-      this.setState({ posts: res.data });
-    });
+    axios
+      .delete(`/api/posts/${id}`)
+      .then(res => {
+        this.setState({ posts: res.data });
+      })
+      .catch(error => console.log(error));
   }
   updateLikes = id => {
     let postsCopy = this.state.posts.slice();
