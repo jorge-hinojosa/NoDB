@@ -1,14 +1,15 @@
 .Footer {
-  background-color: rgb(237, 243, 243);
+  background-color: rgb(51, 80, 80);
 }
 
 .AddPostForm {
   /* border: 1px solid black; */
   width: 70vw;
-  background-color: rgb(237, 243, 243);
+  background-color: rgb(51, 80, 80);
 
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  color: whitesmoke;
 
   display: flex;
   justify-content: space-between;
@@ -22,7 +23,7 @@
   height: 50px;
   border-radius: 50px;
 
-  background-color: rgb(59, 95, 95);
+  background-color: black;
 
   font-size: 2vw;
   font-weight: bold;
@@ -41,7 +42,7 @@
   height: 50px;
   border-radius: 50px;
 
-  background-color: rgb(59, 95, 95);
+  background-color: black;
 
   font-size: 2vw;
   font-weight: bolder;

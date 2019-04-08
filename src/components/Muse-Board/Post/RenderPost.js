@@ -3,7 +3,7 @@ import React from "react";
 function RenderPost(props) {
   return (
     <article className="Post">
-      <h3>{props.title}</h3>
+      <h3 className="Post-title">{props.title}</h3>
       <a href={props.link} target=".blank">
         <img className="Image" src={props.image} alt={props.title} />
       </a>

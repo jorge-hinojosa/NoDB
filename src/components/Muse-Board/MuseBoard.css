@@ -1,13 +1,14 @@
 .Main {
   max-width: 100vw;
-  min-height: 90vh; 
-  background-color: rgb(237, 243, 243);
+  min-height: 90vh;
+  /* background-color: rgb(237, 243, 243); */
+  /* background-color: rgb(45, 70, 70); */
+  background-color: rgb(51, 80, 80);
 
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center; */
-  
 }
 .Board {
   /* border: 1px solid yellow; */
@@ -18,7 +19,7 @@
   /* min-height: 79vh;  */
 
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -39,4 +40,3 @@
   justify-content: space-around;
   align-items: center;
 }
-
