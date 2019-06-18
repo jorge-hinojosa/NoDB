@@ -22,6 +22,7 @@
   color: white;
 }
 #title {
+  border: 1px soli black;
   font-size: 2.5vw;
   font-family: "Viga", sans-serif;
   font-weight: normal;
